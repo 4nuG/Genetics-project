@@ -1,0 +1,16 @@
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_1/,/Fii_2/p' FragariaPseudoChrsV2.fasta |  wc -l
+253461
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_2/,/Fii_3/p' FragariaPseudoChrsV2.fasta |  wc -l
+332436
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_3/,/Fii_4/p' FragariaPseudoChrsV2.fasta |  wc -l
+401833
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_4/,/Fii_5/p' FragariaPseudoChrsV2.fasta |  wc -l
+339122
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_5/,/Fii_6/p' FragariaPseudoChrsV2.fasta |  wc -l
+371679
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_6/,/Fii_7/p' FragariaPseudoChrsV2.fasta |  wc -l
+487519
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_5/,/Fii_7/p' FragariaPseudoChrsV2.fasta |  wc -l
+859197
+thinkmate@thinkmate-X10DAi:/media/thinkmate/easystore$ sed -n '/Fii_0/,/Fii_1/p' FragariaPseudoChrsV2.fasta |  wc -l
+0
