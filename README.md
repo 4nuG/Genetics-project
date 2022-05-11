@@ -18,8 +18,9 @@ We installed bwa, samtools, and IGV with a conda environment.
 We ran our analysis on the thinkmate that stored the data. 
 
 The Project pipeline:
+
 ```
-![plot](Screenshot 2022-05-11 121105.jpg.png)
+![plot](figs/Screenshot 2022-05-11 121105.jpg)
 ```
 
 
