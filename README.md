@@ -20,7 +20,7 @@ We ran our analysis on the thinkmate that stored the data.
 The Project pipeline:
 
 
-![plot](plots/Screenshot 2022-05-11 121105.jpg)
+![plot](plots/Screenshot_2022-05-11_121105.jpg)
 
 
 
