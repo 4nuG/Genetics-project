@@ -1,4 +1,5 @@
-# Genetics-project
+# gen711-811-Alignment of two Fragaria iinumae genomes ![image](https://user-images.githubusercontent.com/81456513/167889313-6b605d48-8464-4109-b4ae-d4744584d952.png)
+
 Project pipeline
 - have Fragaria iinumae genome assembly in contig stage and will be validating
 - started looking for potential softwares, a few of those are: 
