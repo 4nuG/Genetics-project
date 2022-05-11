@@ -1,4 +1,29 @@
-# gen711-811-Alignment of two Fragaria iinumae genomes ![image](https://user-images.githubusercontent.com/81456513/167889313-6b605d48-8464-4109-b4ae-d4744584d952.png)
+# gen711-811-Alignment of two Fragaria iinumae genomes 
+## Background
+### even smaller
+We are interested in checking how accurate our pseudo chromosome assembly of Fragaria iinumae is and will check how well raw reads of the same species aligns to the reference genome. 
+If there is poor alignment, then the pseudo chromosome assembly could be erroneous. 
+If the alignment is good but there are still differences, then we can submit changes indicated by the raw reads to the pseudo chromosome assembly to further improve the assembly. 
+
+Thomas Davis and Lise Mahoney et al. 2017 assembled the pesudo chromosome asembly of Fragaria iinumae in 2017 using Illumina Sequencing which is in pseudomolecules form and also Sequenced the raw reads from Fragaria iinumae in 2021 Using Oxford Nanopore which we compared. The raw reads are in its raw form (220 Fatsq.gz files).
+
+
+## Methods
+We accessed the Thomas Davis and Lise Mahoney et al. 2017 pesudochromosomes on a thinkmate in the Davis Lab at UNH. 
+
+Our pesudochromosome and raw read files were in fastq.gz.
+
+We installed bwa, samtools, and IGV with a conda environment.
+
+We ran our analysis on the thinkmate that stored the data. 
+
+The Project pipeline:
+![plot](Screenshot 2022-05-11 121105.jpg.png)
+
+
+
+We ran into this issue
+
 
 Project pipeline
 - have Fragaria iinumae genome assembly in contig stage and will be validating
