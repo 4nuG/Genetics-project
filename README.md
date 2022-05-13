@@ -1,4 +1,4 @@
-# gen711-811-Alignment of two Fragaria iinumae genomes 
+# gen711-811-Alignment of two Fragaria iinumae genomes by Anushreeya Gurung and Mamta KKajal
 ## Background
 We are interested in checking how accurate our pseudo chromosome assembly of Fragaria iinumae is and will check how well raw reads of the same species aligns to the reference genome. 
 If there is poor alignment, then the pseudo chromosome assembly could be erroneous. 
@@ -25,8 +25,36 @@ The Project pipeline:
 
 ![plot](plots/Screenshot_2022-05-11_121105.jpg)
 
-### Issues and conclusion
+## Results
+![plot](plots/slide1.jpg)
+We first concatated the alignment results of 15 random reeds to make sure the pipeline we provided above would work. 
+##### Percentile of mapped sequence ordered by GC content vs mapped depth
+Mapped depth increases with percent of mapped sequence and there is a higher medeian depth for higher GC content. This means the sequences that were higher in GC content could be better sequenced. The graph is not showing the lower and upper percentiles for some reason. 
+##### GC Content [%] vs Normalized frequency
+The long reads have a model GC content of 38.4% which is less than the 39.70% GC content that the Proceedings of the National Academy of Sciences said in the Frageria iinumae genome. The read could have orignated from a noncoding region explaning why the read was less GC rich than the genome. 
+##### Read cycle vs indel count
+The numebr of insertions and deletions is high for the first 2000 cycles but then sharply decreases and stays steady. 
+##### Read cycle vs Base content [%] 
+These reads are high in Guanine and Adenine as shown by the blue and the faint green line that is underneath the blue. 
+##### Indel length vs Indel count [log]
+
+
+
+
+![plot](plots/Screenshot_2022-05-11_121105.jpg)
+![plot](plots/Screenshot_2022-05-11_121105.jpg)
+![plot](plots/Screenshot_2022-05-11_121105.jpg)
+![plot](plots/Screenshot_2022-05-11_121105.jpg)
+
+
+### Issues and further work
 The analysis resulted in poor coverage in the coverage vs number of mapped bases graph and the reference genome did not appear on the GC contenet [%] vs Normalized frequency graph as expected. Future work includes delving deeper and runing BWA with more reeds and figuring out why 2 graphs were abnormal as described.
+
+
+
+
+
+
 
 
 
@@ -59,4 +87,17 @@ The analysis resulted in poor coverage in the coverage vs number of mapped bases
  2077  samtools sort sample4.bam -o sample4.sorted.bam
  2078  samtools view sample4.sorted.bam | head
  2079  samtools index sample4.sorted.bam
+ 
+ ### Acknowledgements
+ #### Dr Jefferey Miller
+ #### Dr Tom Davis
+ #### Clayton Ludwig (PhD Candidate)
+ 
+ ##### Analysis of the plots made possible by http://avrilomics.blogspot.com/2013/07/ 
+ ##### Iinumae data compirison made possible by https://www.pnas.org/doi/10.1073/pnas.2105431118  
+
+
+ 
+
+
 
