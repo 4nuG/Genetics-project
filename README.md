@@ -1,4 +1,4 @@
-# gen711-811-Alignment of two Fragaria iinumae genomes by Anushreeya Gurung and Mamta KKajal
+Alignment of two Fragaria iinumae genomes by Anushreeya Gurung and Mamta KKajal
 ## Background
 We are interested in checking how accurate our pseudo chromosome assembly of Fragaria iinumae is and will check how well raw reads of the same species aligns to the reference genome. 
 If there is poor alignment, then the pseudo chromosome assembly could be erroneous. 
@@ -37,6 +37,9 @@ The numebr of insertions and deletions is high for the first 2000 cycles but the
 ##### Read cycle vs Base content [%] 
 These reads are high in Guanine and Adenine as shown by the blue and the faint green line that is underneath the blue. 
 ##### Indel length vs Indel count [log]
+The insertions and deletion patterns of the indels are fairly the same and there are larger indels than smaller. The model of the ins/del ratio is between 50 and 60 which means insertions occur more frequently than deletions in these read samples.
+
+![plot](plots/slide2.jpg)
 
 
 
