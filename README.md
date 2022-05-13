@@ -1,4 +1,6 @@
-# Alignment of two Fragaria iinumae genomes by Anushreeya Gurung and Mamta KKajal
+# Alignment of two Fragaria iinumae genomes 
+# by Anushreeya Gurung and Mamta Kajal
+
 ## Background
 We are interested in checking how accurate our pseudo chromosome assembly of Fragaria iinumae is and will check how well raw reads of the same species aligns to the reference genome. 
 If there is poor alignment, then the pseudo chromosome assembly could be erroneous. 
