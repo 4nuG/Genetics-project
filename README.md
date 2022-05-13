@@ -14,46 +14,34 @@ We accessed the Thomas Davis and Lise Mahoney et al. 2017 pesudochromosomes on a
 Our pesudochromosome and raw read files were in fastq.gz.
 
 We installed bwa, samtools, and IGV with a conda environment.
+Burrow Wheeler Alignment (BWA)is a software package for mapping low-divergent sequences against a large reference genome.
+![image](https://user-images.githubusercontent.com/81456513/168322062-41a15c29-e12a-49e1-a906-eade42a26dda.png)
+Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. 
+![image](https://user-images.githubusercontent.com/81456513/168322071-22af5f9e-bb59-48e8-93f7-339282f9cc60.png)
+Integrated Genome Viewer (IGV) is an interactive tool for the visual exploration of genomic data.
+![image](https://user-images.githubusercontent.com/81456513/168322093-cb44b68c-4026-4ab2-8a32-7d951c52ccd0.png)
+
 
 We ran our analysis on the thinkmate that stored the data. 
 
 The Project pipeline:
 
-
 ![plot](plots/Screenshot_2022-05-11_121105.jpg)
 
+### Issues and conclusion
+The analysis resulted in poor coverage in the coverage vs number of mapped bases graph and the reference genome did not appear on the GC contenet [%] vs Normalized frequency graph as expected. Future work includes delving deeper and runing BWA with more reeds and figuring out why 2 graphs were abnormal as described.
 
 
-We ran into this issue
 
 
-Project pipeline
-- have Fragaria iinumae genome assembly in contig stage and will be validating
-- started looking for potential softwares, a few of those are: 
-    - flye software 
-    - BiscoT software by Bionano genomics
 
-update
-4/14/2022
-We acquired draft sequence of f. illumne using illumina
 
-we can:
-    -validate curent contigs
-    -form our own contigs
-    
-    we should probabaly select the task we could most comfortable finish in a week 
+
     
 
-update
-4/2/2022 
-we will validate the draft sequence by using BWA which will create a bam file. From the bam files we can create graphs using tools like IGV.
 
-Burrows-Wheeler Aligner: http://bio-bwa.sourceforge.net/
-there are 3 algorithms. We will use BWA-MEM becuse our reads are 100-250 bp and this algo can accomidate that. It is aslo one of the the most acurate.
-We need to figure out what the two reference genome formats are. If they are compatable or not or how to do so. we will access this sunday.
-###############
-Update 5/4/2022
-Commands used 
+
+## Commands used:
  2060  bwa mem FragariaPseudoChrsV2.fasta FAQ99085_pass_635cf375_2.fastq > sample4.sam
  2061  ls
  2062  less sample4.sam 
