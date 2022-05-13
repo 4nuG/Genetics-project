@@ -28,6 +28,7 @@ The Project pipeline:
 ![plot](plots/Screenshot_2022-05-11_121105.jpg)
 
 ## Results
+### 15 concatnated reads
 ![plot](plots/slide1.jpg)
 We first concatated the alignment results of 15 random reeds to make sure the pipeline we provided above would work. 
 ##### Percentile of mapped sequence ordered by GC content vs mapped depth
@@ -43,6 +44,7 @@ These reads are high in Thymine(blue) and Adenine(green) as shown by the blue an
 ##### Indel length vs Indel count [log]
 The insertions and deletion patterns of the indels are fairly the same and there are smaller indels than larger. The model of the ins/del ratio is between 50 and 60 which means insertions occur more frequently than deletions in these read samples and the inserted reads are longer than the size of the deleated reads.
 
+### 220 concatnated reads
 ![plot](plots/slide2.jpg)
 ![plot](plots/slide3.jpg)
 After we were sure the pipleline was not erranous, we proceded the analysis with all the 220 reads we had in our artisinal.
@@ -57,13 +59,15 @@ This plot is empty even though we expect line of the coverage to peak at 0 and t
 ##### GC Content [%] vs Normalized frequency
 The long reads have a model GC content of 38.4% which is less than the 39.70% GC content that the Proceedings of the National Academy of Sciences said in the Frageria iinumae genome. The read could have orignated from a noncoding region explaning why the read was less GC rich than the genome. This is consisitant with the results achieved for the 15 concatnated reads. 
 
-
+### IGV plot for 5 random reads
+Here we wanted to test the pipleline for errors so we randomly selected 15 reads to analyze the depth.
 ![plot](plots/slide4.jpg)
-
-
+Here we could see similarities between the reads and could tell that with the addition of more reads that there would be regions of high and low depth.
+![plot](plots/slide5.jpg)
+This is a concatination of 15 of the reads and already we can tell there is a pattern of regions with higher depth. Sometimes there is a contig in one read where there is a gap in another read. These are split reads and can be used to improve the reference genome assembly. Not pictured here but there are regions of repeated sequences so reads will pile up at the first instance of the repeatable sequence. This means there will be higher depth at a repeatble sequence location at the begining of the refernece genome rather than later instances of the same sequence because alignment is order based. 
 
 ## Issues and further work
-The analysis resulted in poor coverage in the coverage vs number of mapped bases graph and the reference genome did not appear on the GC contenet [%] vs Normalized frequency graph as expected. Future work includes delving deeper and runing BWA with more reeds and figuring out why 2 graphs were abnormal as described.
+The analysis resulted in poor coverage in the coverage vs number of mapped bases graph and the reference genome did not appear on the GC contenet [%] vs Normalized frequency graph as expected. Future work includes delving deeper and runing BWA with more reads and figuring out why 2 graphs were abnormal as described. More plots of read data are included in addtional plots folder however they are not noteworthy on their own as we are not sure where they are located in the genome. If we kenw what genee they beloged to, then we could make a more noteworthy analyses
 
 
 
