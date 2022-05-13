@@ -13,19 +13,35 @@ Thomas Davis and Lise Mahoney et al. 2017 assembled the pesudo chromosome asembl
 ## Methods
 We accessed the Thomas Davis and Lise Mahoney et al. 2017 pesudochromosomes on a thinkmate in the Davis Lab at UNH whihc is not included in this reposotory for privacy reasons.
 
-Our pesudochromosome and raw read files were in fastq.gz.
-
-We installed bwa, samtools, and IGV with a conda environment.
-Burrow Wheeler Alignment (BWA)is a software package for mapping low-divergent sequences against a large reference genome.
-Samtools is a set of utilities that manipulate alignments in the SAM (Sequence Alignment/Map), BAM, and CRAM formats. 
-Integrated Genome Viewer (IGV) is an interactive tool for the visual exploration of genomic data.
-
-
-We ran our analysis on the thinkmate that stored the data. 
-
 The Project pipeline:
 
 ![plot](plots/Screenshot_2022-05-11_121105.jpg)
+Our pesudochromosome and raw read files were in fastq.gz.
+We installed bwa, samtools, and IGV with a conda environment.
+We ran our analysis on the thinkmate that stored the data. Below are a few example lines of how to run the tools used in this analysis and the file names should be changed to reflect your own files. The exact commands used in this study are in a shell script file in the directory. 
+### BWA
+Software for aligning sequence against a genome. There are 3 different algorithms we can specify from that will make the analysis more accurate that is determined from the size of the reads. We used mem algorithm at first because it Align 70bp-1Mbp query sequences and ours are 100-200 bp long. This did not generate viable SAM/BAM files so we were advised to use bwasw as this could be better for long reads. The inputs are reference genome sequence and raw reads in the form of fastq and it outputs a SAM file. A SAM file is a human readable text file that contains the results of the analysis that compared the raw reads to the reference sequence. 
+```
+BWA can be cloned by: git clone https://github.com/lh3/bwa.git
+cd bwa;
+make;
+./bwa index reference.fastq
+./bwa algorithm reference.fastq rawread.fastq > align.sam
+```
+
+### SAMtools
+A software for parsing and manipulating the alignments in SAM/BAM file. We inputted a SAM file and was returned a BAM file, then the BAM file which is the binary computer legible version of the SAM file was used to generate a stats file. The stats file was then used to generate plots on coverage and depth statistics which will ultimately allow us to figure out if reference pseudochromosome sequence is accurate. 
+```
+Samtools –b align.sam > align.bam
+samtools stats input.bam > input.bam.stats
+plot-bamstats -p sample# input.bam.stats
+```
+
+### IGV
+Integrated Genome Viewer (IGV) is an interactive tool for the visual exploration of genomic data.
+```
+IGV example command
+```
 
 ## Results
 ### 15 concatnated reads
@@ -107,7 +123,7 @@ The analysis resulted in poor coverage in the coverage vs number of mapped bases
  2078  samtools view sample4.sorted.bam | head
  2079  samtools index sample4.sorted.bam
  
- ### Acknowledgements
+ ## Acknowledgements
  #### Dr Jefferey Miller
  #### Dr Tom Davis
  #### Clayton Ludwig (PhD Candidate)
