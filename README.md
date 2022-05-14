@@ -5,7 +5,7 @@
 Fragaria iinumae (2n) is one of the diploid progenitors to cultivated strawberry, Fragaria ×ananassa (8x) (Rousseau-Gueutin et al. 2009; Dimeglio et al., 2014). Davis Lab at UNH sequenced the genome of F. iinumae in 2017 using Illumina Sequencing platform. This assembly is in its pseudochromosomes form. However, there are still some gaps or missing reads in the assembly. Recently, genome from the same plant was sequenced using Oxford Nanopore Sequencing Technology in Davis Lab. This data is in its raw from (220 Fastq files). The purpose of this assembly will be filling in the gaps between the earlier genome and checking how accurate it is.
 
 ## Project
-For Gen 711/811, we are doing a part of this project i.e., aligning the raw reads of Nanopore genome data to pseudochromosomes of Illumina Seequenced Genome. We are interested in checking how accurate the pseudochromosome assembly is and will check how well raw reads of the same species aligns to the it. 
+For Gen 711/811, we are doing a part of this project i.e., aligning the raw reads of Nanopore genome data to pseudochromosomes of Illumina Seequenced Genome. We are interested in checking how accurate the pseudochromosome assembly is.
 					
 ## Material
 #Reference Genome: Pseudochomosomes assembly of F. iinumae (~198 Mb)
