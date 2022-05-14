@@ -1,4 +1,4 @@
-# Alignment of two Fragaria iinumae genomes 
+# Aligning two Fragaria iinumae Genomes 
 ### by Anushreeya Gurung and Mamta Kajal
 
 ## Introduction
