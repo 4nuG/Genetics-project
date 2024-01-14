@@ -1,4 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/2022-orange)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bwa)
+
 
 ![Thumbnail](https://raw.githubusercontent.com/4nuG/Genetics-project/main/gene_banner.png)
 
