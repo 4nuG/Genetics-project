@@ -1,5 +1,8 @@
 ![Thumbnail](https://raw.githubusercontent.com/4nuG/Genetics-project/main/gene_banner.png)
 
+REPLACE WITH TEXT
+--------
+
 # Aligning two Fragaria iinumae Genomes 
 ### by Anushreeya Gurung and Mamta Kajal
 
