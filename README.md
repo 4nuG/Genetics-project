@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/2022-orange)
+
 ![Thumbnail](https://raw.githubusercontent.com/4nuG/Genetics-project/main/gene_banner.png)
 
 REPLACE WITH TEXT
