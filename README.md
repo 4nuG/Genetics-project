@@ -1,4 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/2022-orange)
+![Static Badge](https://img.shields.io/badge/development-yellow)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bwa)
 
 
