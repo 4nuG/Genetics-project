@@ -73,30 +73,38 @@ The long reads have a model GC content of 38.4%, approximately the same as menti
 ##### Read Cycle vs Indel Count
 The number of insertions and deletions is high for the first 20,000 cycles but then sharply decreases and stays steady.
 
-##### Read cycle vs Base content [%] (NEED TO FIX )
-These reads are high in Thymine(blue) and Adenine(green) as shown by the blue and the faint green line that is underneath the blue. 
-##### Indel length vs Indel count [log]
-The insertions and deletion patterns of the indels are fairly the same and there are smaller indels than larger. The model of the ins/del ratio is between 50 and 60 which means insertions occur more frequently than deletions in these read samples and the inserted reads are longer than the size of the deleated reads.
+##### Read Cycle vs Base Content [%]
+These reads are high in Thymine (blue) and Adenine (green) as shown by the blue and faint green lines that are underneath the blue.
 
-### 220 concatenated reads
+##### Indel Length vs Indel Count [log]
+The insertion and deletion patterns of the indels are fairly the same, with smaller indels more frequent than larger ones. The model of the ins/del ratio, ranging between 50 and 60, indicates that insertions occur more frequently than deletions in these read samples, and the inserted reads are longer than the size of the deleted reads.
+
+
+### 220 Concatenated Reads
 ![plot](plots/slide2.jpg)
 ![plot](plots/slide3.jpg)
 
-After we were sure the pipleline was not erroneous, we proceded the analysis by concatenating all the 220 fastq files into one file and then aligning this file with reference genome.
-##### Indel length vs Indel count [log]
-The insertions and deletion patterns of the indels are fairly the same and there are smaller indels than larger. The model of the ins/del ratio is around 80 which means insertions occur more frequently than deletions and the inserted reads are longer than the size of the deleated reads in these read samples which is consistant with the results of 15 concatnated reads. 
-##### Read cycle vs indel counthigh
-The numebr of insertions and deletions is high for the first 20000 cycles but then sharply decreases and stays steady which is consistant with the results of 15 concatnated reads. 
-##### Read cycle vs Base content [%] 
-These reads are high in Thymine(blue) and Adenine(green) as shown by the blue and the faint green line that is underneath the blue which is consistant with the results of 15 concatnated reads. It also makesn sense for the purine and pyrimidine to both be high and they are complements. 
-##### Coverage vs Number of mapped bases
-This plot is empty even though we expect line of the coverage to peak at 0 and tapper off to 1 to represent that there are less areas with high depth. We are not sure why this plot is not showing depth. 
-##### GC Content [%] vs Normalized frequency
-The long reads have a model GC content of 38.4% which is consisitant with the results achieved for the 15 concatnated reads. 
+After confirming the pipeline's accuracy with 15 concatenated reads, we proceeded with the analysis by concatenating all 220 fastq files into one file and aligning it with the reference genome.
+
+##### Indel Length vs Indel Count [log]
+The insertion and deletion patterns of the indels are similar to the results from 15 concatenated reads, with smaller indels more frequent than larger ones. The model of the ins/del ratio is around 80 which means insertions occur more frequently than deletions and the inserted reads are longer than the size of the deleated reads in these read samples which is consistant with the results of 15 concatnated reads. 
+
+##### Read Cycle vs Indel Count
+The number of insertions and deletions is high for the first 20,000 cycles but then sharply decreases and stays steady, which is consistant with the results of the 15 concatnated reads. 
+
+##### Read Cycle vs Base Content [%]
+These reads are high in Thymine (blue) and Adenine (green), consistent with the results of 15 concatenated reads. It also makesn sense for the purine and pyrimidine to both be high as they are complements.
+
+##### Coverage vs Number of Mapped Bases
+This plot is empty even though we expect the coverage line to peak at 0 and taper off to 1, indicating fewer areas with high depth. We are not sure why this plot is not showing depth.
+
+##### GC Content [%] vs Normalized Frequency
+The long reads have a model GC content of 38.4%, consistent with the results achieved for the 15 concatenated reads.
 
 ### IGV Analysis
 Here we wanted to test the pipleline for errors so we randomly selected 15 reads to analyze the depth.
 Here we could see similarities between the reads and could tell that with the addition of more reads that there would be regions of high and low depth.
+Here, we tested the pipeline for errors by randomly selecting 15 reads to analyze the depth.
 
 ![plot](plots/slide5.jpg)
 
