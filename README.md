@@ -54,10 +54,13 @@ plot-bamstats -p sample# input.bam.stats
 Integrated Genome Viewer (IGV) is an interactive tool designed for the visual exploration of genomic data. We used IGV to align both genome sequences and visually inspect the alignment. Keep in mind that index files for both genomes are required for proper viewing.
 
 ## Results
-We started by concatenating 15 fastq files (out of 220 concatenated files) into one file and then aligning this file to reference genome. 
+We initiated the analysis by concatenating 15 fastq files (out of 220 total files) into one file and aligning this combined file to the reference genome.
+
 ### 15 concatenated reads
 ![plot](plots/slide1.jpg)
-We first concatanated the alignment results of 15 random reeds to make sure the pipeline we provided above would work. 
+
+We first concatenated the alignment results of 15 random reads to ensure the functionality of the provided pipeline.
+
 ##### Percentile of mapped sequence ordered by GC content vs mapped depth
 Mapped depth increases with percent of mapped sequence and there is a higher median depth for higher GC content. This means the sequences that were higher in GC content could be better sequenced.  
 ##### Coverage vs Number of mapped bases
