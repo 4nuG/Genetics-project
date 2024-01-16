@@ -42,15 +42,16 @@ make;
 ```
 
 ### SAMtools
-A software for parsing and manipulating the alignments in SAM/BAM file. The input was a SAM file and a BAM file was generated, then the BAM file which is the binary computer legible version of the SAM file was used to generate a stats file. The stats file was then used to generate plots on coverage and depth statistics which are helpful in knowing about the similarities in both the genomes.  
-```
+A software for parsing and manipulating the alignments in SAM/BAM file. The input was a SAM file, and a BAM file was generated. Then the BAM file, which is the binary computer-readable version of the SAM file, was used to generate a stats file. The stats file was then used to generate plots on coverage and depth statistics, which are helpful in knowing about the similarities in both genomes.
+
+```bash
 Samtools –b align.sam > align.bam
 samtools stats input.bam > input.bam.stats
 plot-bamstats -p sample# input.bam.stats
 ```
 
 ### IGV
-Integrated Genome Viewer (IGV) is an interactive tool for the visual exploration of genomic data. We aligned both the genome sequnces against each other in IGV to see alignment. For viewing, index files of both the genomes are also required. 
+Integrated Genome Viewer (IGV) is an interactive tool designed for the visual exploration of genomic data. We used IGV to align both genome sequences and visually inspect the alignment. Keep in mind that index files for both genomes are required for proper viewing.
 
 ## Results
 We started by concatenating 15 fastq files (out of 220 concatenated files) into one file and then aligning this file to reference genome. 
