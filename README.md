@@ -56,20 +56,24 @@ Integrated Genome Viewer (IGV) is an interactive tool designed for the visual ex
 ## Results
 We initiated the analysis by concatenating 15 fastq files (out of 220 total files) into one file and aligning this combined file to the reference genome.
 
-### 15 concatenated reads
+### 15 Concatenated Reads
 ![plot](plots/slide1.jpg)
 
 We first concatenated the alignment results of 15 random reads to ensure the functionality of the provided pipeline.
 
-##### Percentile of mapped sequence ordered by GC content vs mapped depth
-Mapped depth increases with percent of mapped sequence and there is a higher median depth for higher GC content. This means the sequences that were higher in GC content could be better sequenced.  
-##### Coverage vs Number of mapped bases
-This plot is empty even though we expect line of the coverage to peak at 0 and tapper off to 1 to represent that there are less areas with high depth. We are not sure why this plot is not showing depth, but when this file was aligned with reference genome in IGV, much read depth was seen. 
-##### GC Content [%] vs Normalized frequency
-The long reads have a model GC content of 38.4% which apporoximately same as mentioned by Qiao et al (2021) i.e., 39.70% GC content.
-##### Read cycle vs indel count
-The number of insertions and deletions is high for the first 20000 cycles but then sharply decreases and stays steady. 
-##### Read cycle vs Base content [%] 
+##### Percentile of Mapped Sequence Ordered by GC Content vs Mapped Depth
+Mapped depth increases with the percent of mapped sequence, and there is a higher median depth for higher GC content. This suggests that sequences with higher GC content could be better sequenced.
+
+##### Coverage vs Number of Mapped Bases
+This plot is empty even though we expect the coverage line to peak at 0 and taper off to 1, representing fewer areas with high depth. We are not sure why this plot is not showing depth, but when this file was aligned with the reference genome in IGV, much read depth was seen.
+
+##### GC Content [%] vs Normalized Frequency
+The long reads have a model GC content of 38.4%, approximately the same as mentioned by Qiao et al. (2021), i.e., 39.70% GC content.
+
+##### Read Cycle vs Indel Count
+The number of insertions and deletions is high for the first 20,000 cycles but then sharply decreases and stays steady.
+
+##### Read cycle vs Base content [%] (NEED TO FIX )
 These reads are high in Thymine(blue) and Adenine(green) as shown by the blue and the faint green line that is underneath the blue. 
 ##### Indel length vs Indel count [log]
 The insertions and deletion patterns of the indels are fairly the same and there are smaller indels than larger. The model of the ins/del ratio is between 50 and 60 which means insertions occur more frequently than deletions in these read samples and the inserted reads are longer than the size of the deleated reads.
