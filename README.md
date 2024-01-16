@@ -33,7 +33,7 @@ The major software used were BWA, SAMtools, and IGV. The exact commands used in 
 ### BWA
 Software for aligning sequence against a genome. There are 3 different algorithms we can specify that will make the analysis more accurate, determined from the size of the reads. We used the mem algorithm at first because it aligns 70bp-1Mbp query sequences, and ours are 100-200 bp long. This did not generate correct SAM/BAM files, so we were advised to use bwasw as it is better for long reads. The inputs are reference genome sequence and raw reads in the form of fastq, and it outputs a SAM file. A SAM file is a human-readable text file that contains the results of the analysis that compared the raw reads to the reference sequence.
 
-```
+```bash
 BWA can be cloned by: git clone https://github.com/lh3/bwa.git
 cd bwa;
 make;
