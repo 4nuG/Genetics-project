@@ -133,9 +133,9 @@ Query genome files: FAQ99085_pass_635cf375_2.fastq
 ```
  
  ## Acknowledgements
- #### Dr Jefferey Miller
- #### Dr Tom Davis
- #### Clayton Ludwig (PhD Candidate)
+- Dr Jefferey Miller
+- Dr Tom Davis
+- Clayton Ludwig (PhD Candidate)
  
 ## References
 #### DiMeglio, L. M., Staudt, G., Yu, H., & Davis, T. M. (2014). A Phylogenetic Analysis of the Genus Fragaria (Strawberry) Using Intron-Containing Sequence from the ADH-1 Gene. PLoS ONE, 9(7), e102237. https://doi.org/10.1371/journal.pone.0102237
