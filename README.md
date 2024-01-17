@@ -13,7 +13,6 @@ Note: As these genomes are not published, we have not uploaded the files here.
 [Emphasis](#emphasis)  
 ...snip...    
 <a name="headers"/>
-## Headers
 
 # Aligning Two Fragaria iinumae Genomes 
 ### by Anushreeya Gurung and Mamta Kajal
