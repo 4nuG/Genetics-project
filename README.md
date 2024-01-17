@@ -9,7 +9,6 @@
 Note: As these genomes are not published, we have not uploaded the files here.
 
 ##### Table of Contents  
-- [Headers](#headers)  
 - [Introduction](#introduction)  
 - [Project](#project)
 - [Material](#material)
