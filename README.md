@@ -6,7 +6,7 @@
 ![Thumbnail](https://raw.githubusercontent.com/4nuG/Genetics-project/main/gene_banner.png)
 
 --------
-Detailed analysis of aligning two Fragaria iinumae genomes, combining Illumina and Nanopore sequencing data. 
+This README is a etailed analysis of aligning two Fragaria iinumae genomes, combining Illumina and Nanopore sequencing data. 
 
 Note: As these genomes are not published, we have not uploaded the files here.
 
