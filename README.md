@@ -10,8 +10,7 @@ Note: As these genomes are not published, we have not uploaded the files here.
 
 ##### Table of Contents  
 [Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
+  
 <a name="headers"/>
 
 # Aligning Two Fragaria iinumae Genomes 
