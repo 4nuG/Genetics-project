@@ -18,8 +18,8 @@ Fragaria iinumae (2n) is one of the diploid progenitors of cultivated strawberry
 For Gen 711/811, we are doing a part of this project, i.e., aligning the raw reads of Nanopore genome data to pseudochromosomes of the Illumina Sequenced Genome. We are interested in checking how accurate the pseudochromosome assembly is and how well the reads from Nanopore data align to it.
 
 ## Material
-#Reference Genome: Pseudochromosomes assembly of F. iinumae (~198 Mb)
-#Query Genome: Raw reads generated from Oxford Nanopore Sequencing (220 Fastq files)
+- Reference Genome: Pseudochromosomes assembly of F. iinumae (~198 Mb)
+- Query Genome: Raw reads generated from Oxford Nanopore Sequencing (220 Fastq files)
 Both genomes are sequenced from one plant of F. iinumae. As these genomes are not published, we have not uploaded the files here.
 
 ## Method
