@@ -1,0 +1,25 @@
+theme: jekyll-theme-minimal
+title: <a href="https://github.com/4nuG/Statistical-Analysis">Statistical Analysis</a> # your name (or website title) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+Probability and scientific methods for data analysis. 
+<br>
+Exploratory data analysis, 
+<br>
+survey sampling, 
+<br>
+probability,
+<br>
+discrete and continuous distributions, 
+<br>
+confidence intervals, 
+<br> 
+hypothesis testing, 
+<br>
+comparing samples, 
+<br>
+linear regression, 
+<br>analysis of variance  <br>
+  <br>
+  <a href="https://4nug.github.io">Return to Portfolio</a>
+  <br>
+theme: jekyll-theme-minimal
